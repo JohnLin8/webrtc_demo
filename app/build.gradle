@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
 
 android {
     signingConfigs {
@@ -7,6 +8,7 @@ android {
     defaultConfig {
         applicationId "d.d.meshenger"
         minSdkVersion 19
+        //noinspection ExpiredTargetSdkVersion
         targetSdkVersion 26
         versionCode 2
         versionName "1.1.0"
@@ -23,6 +25,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    namespace 'd.d.meshenger'
 }
 
 dependencies {
